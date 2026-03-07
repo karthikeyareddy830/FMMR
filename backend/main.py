@@ -57,7 +57,10 @@ app.add_middleware(
 app.include_router(query_router)
 app.include_router(search_router)
 
-
+@app.get("/", tags=["Health"], summary="Root endpoint")
+async def root():
+    return {"status": "MedRAG backend running"}
+    
 # ── Health check ──────────────────────────────────────────────────────────────
 @app.get(
     "/health",
