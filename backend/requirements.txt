@@ -10,7 +10,7 @@ pandas>=2.2.0
 python-dotenv>=1.0.1
 
 # ── Embeddings & Language ─────────────────────
-sentence-transformers>=2.7.0
+#sentence-transformers>=2.7.0
 langdetect>=1.0.9
 deep-translator>=1.11.4
 
